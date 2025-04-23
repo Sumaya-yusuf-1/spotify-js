@@ -1,0 +1,66 @@
+
+
+
+.signin {
+    background-color: #2c3942; 
+    color: white;
+    border-color: white;
+    border-radius: 20px;   
+     padding: 0.5rem 1rem;
+     font-size: 1rem;
+     cursor: pointer;
+     transition: background-color 0.3s ease, transform 0.2s ease;
+
+}
+
+
+.signup {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+}
+
+.signin:hover,.signup:hover {
+    opacity: 0.9;
+    transform: scale(1.03);
+}
+
+
+
+.register {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.search-input{
+    padding: 10px;
+    border-radius: 20px;
+    width: 300px;
+}
+.input-container{
+    gap: 10px;
+}
+
+
+.icon-button{
+    color: #2c3942;
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .search-container {
+        display: none;
+    }
+}
