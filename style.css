@@ -1,66 +1,108 @@
-
-
-
-.signin {
-    background-color: #2c3942; 
-    color: white;
-    border-color: white;
-    border-radius: 20px;   
-     padding: 0.5rem 1rem;
-     font-size: 1rem;
-     cursor: pointer;
-     transition: background-color 0.3s ease, transform 0.2s ease;
-
+body {
+  margin: 0;
+  padding: 0;
 }
-
+.header {
+  border-bottom: 2px solid #f5e7e7;
+}
+.signin {
+  background-color: #2c3942;
+  color: white;
+  border-color: white;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
 
 .signup {
-    background-color: white;
-    color: black;
-    border-radius: 20px;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.signin:hover,.signup:hover {
-    opacity: 0.9;
-    transform: scale(1.03);
+.signin:hover,
+.signup:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
 }
-
-
 
 .register {
-    display: flex;
-    gap: 0.75rem;
+  display: flex;
+  gap: 0.75rem;
 }
 
-.search-input{
-    padding: 10px;
-    border-radius: 20px;
-    width: 300px;
+.search-input {
+  padding: 10px;
+  border-radius: 20px;
+  width: 300px;
 }
-.input-container{
-    gap: 10px;
-}
-
-
-.icon-button{
-    color: #2c3942;
-
+.input-container {
+  gap: 10px;
 }
 
+.icon-button {
+  color: #2c3942;
+}
 
+/*aside css */
 
+.aside {
+  margin-top: 0;
+  width: 30%;
+}
 
+.aside-container {
+  background-color: #050606;
+  color: white;
 
+  padding: 10px;
+}
+.aside-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  height: 1000px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+h2 {
+  margin-top: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h2:hover{
+    width: 20rem;
+}
 
+.inner-container {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
 
+/*main css */
+
+.bodySection {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.main {
+  flex-grow: 1;
+  background-color: #2a2626;
+  padding: 1rem;
+}
 
 @media (max-width: 768px) {
-    .search-container {
-        display: none;
-    }
+  .search-container {
+    display: none;
+  }
 }
