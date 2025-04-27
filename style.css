@@ -101,6 +101,11 @@ h2:hover{
   padding: 1rem;
 }
 
+.audio-title{
+  justify-content: space-between;
+  display: flex;
+  color: #a7bdcd;
+}
 @media (max-width: 768px) {
   .search-container {
     display: none;

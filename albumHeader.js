@@ -53,8 +53,10 @@ const albumHeader = () => {
     albumInfo.appendChild(albumText);
   
     album.appendChild(albumInfo);
+ 
+
+    
   
     return album;
   };
 
-  
