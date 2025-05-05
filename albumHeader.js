@@ -1,4 +1,8 @@
 const albumHeader = () => {
+
+
+
+    
     const album = document.createElement('div');
     album.classList.add('album-album');
     album.style.display = 'flex';
@@ -21,8 +25,8 @@ const albumHeader = () => {
     albumImage.style.borderRadius = '8px';
   
     const albumText = document.createElement('div');
-    albumText.style.display = 'flex'; // add this
-    albumText.style.flexDirection = 'column'; // vertical stacking
+    albumText.style.display = 'flex'; 
+    albumText.style.flexDirection = 'column'; 
     albumText.style.gap = '0.5rem';
   
     const albumTitle = document.createElement('h2');

@@ -10,5 +10,8 @@ const audioPlayer = () => {
     title.appendChild(audioTitle); 
     title.appendChild(duration);
   
+
+
+    
     return title;
   };

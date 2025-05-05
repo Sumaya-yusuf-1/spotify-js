@@ -1,35 +1,23 @@
-// db/playlists.js
-const playlistsDB = [
-    {
-      id: 1,
-      name: "Chill Hits",
-      description: "Relax and vibe with mellow tunes.",
-      cover: "src/images/chill.jpg",
-      songs: [
-        { title: "Ocean Drive", artist: "Duke Dumont" },
-        { title: "Sunset Lover", artist: "Petit Biscuit" },
-      ],
-    },
-    {
-      id: 2,
-      name: "Workout Mix",
-      description: "Pump up your workout with high-energy tracks.",
-      cover: "src/images/workout.jpg",
-      songs: [
-        { title: "Stronger", artist: "Kanye West" },
-        { title: "Titanium", artist: "David Guetta ft. Sia" },
-      ],
-    },
-    {
-      id: 3,
-      name: "Top Hits 2025",
-      description: "Stay updated with this year's biggest tracks.",
-      cover: "src/images/top.jpg",
-      songs: [
-        { title: "Hit Me Up", artist: "Nova" },
-        { title: "Eclipse", artist: "Solar Drift" },
-      ],
-    }
-  ];
-  
-  export default playlistsDB;
+const playlists = [
+  {
+    id: "1",
+    name: "Chill Vibes",
+    description: "Relaxing and soothing tracks to calm your mind.",
+    albumImage: "src/images/chill.jpg",
+    audioSrc: "src/audios/chill.mp3", // NEW
+  },
+  {
+    id: "2",
+    name: "Workout Beats",
+    description: "High energy tracks for your workout session.",
+    albumImage: "src/images/workout.jpg",
+    audioSrc: "src/audios/workout.mp3", // NEW
+  },
+  {
+    id: "3",
+    name: "Top Hits 2025",
+    description: "The hottest songs of the year!",
+    albumImage: "src/images/top_hits.jpg",
+    audioSrc: "src/audios/tophits.mp3", // NEW
+  },
+];
