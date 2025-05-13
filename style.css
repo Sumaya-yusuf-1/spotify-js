@@ -95,7 +95,7 @@ h2:hover{
   display: flex;
   flex-direction: row;
   width: 100%;
-  align-items: stretch; /* ✅ This ensures children grow equally */
+  align-items: stretch; 
 }
 .main {
   flex-grow: 1;
@@ -107,6 +107,12 @@ h2:hover{
   justify-content: space-between;
   display: flex;
   color: #a7bdcd;
+}
+footer {
+  background-color: #141111;
+  color: white;
+  padding: 10px;
+  text-align: center;
 }
 @media (max-width: 768px) {
   .search-container {
