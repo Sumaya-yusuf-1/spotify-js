@@ -53,8 +53,12 @@ body {
 /*aside css */
 
 .aside {
-  margin-top: 0;
   width: 30%;
+  background-color: #050606;
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .aside-container {
@@ -64,15 +68,12 @@ body {
   padding: 10px;
 }
 .aside-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  flex-grow: 1;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   gap: 1.75rem;
-  height: 1000px;
   font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
 }
 h2 {
   margin-top: 0;
@@ -94,6 +95,7 @@ h2:hover{
   display: flex;
   flex-direction: row;
   width: 100%;
+  align-items: stretch; /* ✅ This ensures children grow equally */
 }
 .main {
   flex-grow: 1;
