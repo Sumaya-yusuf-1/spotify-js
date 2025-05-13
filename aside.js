@@ -1,4 +1,4 @@
-const aside = () => {
+export const aside = () => {
     const asideEl = document.createElement("aside");
     asideEl.classList.add("aside");
   
