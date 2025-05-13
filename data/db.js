@@ -2,7 +2,7 @@ export const playlists = [
   {
     name: "Liked Songs",
     description: "Your personal collection of favorite tracks.",
-    albumImage: "src/images/liked_songs.jpg",
+    albumImage: "/src/images/istockphoto-1324638796-612x612.jpg",
     songs: [
       { title: "Love Story", duration: "3:55", audioSrc: "src/audios/love_story.mp3" },
       { title: "Levitating", duration: "3:24", audioSrc: "src/audios/levitating.mp3" },
