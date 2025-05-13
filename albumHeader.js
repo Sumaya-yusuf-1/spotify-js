@@ -7,6 +7,7 @@ export const albumHeader = (playlist) => {
   album.style.marginBottom= "20px";
 
   const img = document.createElement("img");
+  img.classList.add("album-image");
   img.src = playlist.albumImage;
   img.alt = playlist.name;
   img.style.width = "150px";

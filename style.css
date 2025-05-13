@@ -112,4 +112,7 @@ h2:hover{
   .search-container {
     display: none;
   }
+  .album-image{
+    width: 500px;
+  }
 }
