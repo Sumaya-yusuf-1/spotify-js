@@ -13,7 +13,7 @@ export const playlist = (playlistData) => {
   const header = albumHeader(playlistData);
   main.appendChild(header);
 
-  // ✅ Optional: show songs
+  
   const songList = document.createElement("div");
   songList.classList.add("playlist-container");
   songList.style.padding = "1rem";
