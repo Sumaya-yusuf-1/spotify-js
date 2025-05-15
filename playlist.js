@@ -13,19 +13,39 @@ export const playlist = (playlistData) => {
   const header = albumHeader(playlistData);
   main.appendChild(header);
 
-  
   const songList = document.createElement("div");
   songList.classList.add("playlist-container");
   songList.style.padding = "1rem";
 
-  playlistData.songs.forEach(song => {
+  playlistData.songs.forEach((song) => {
     const songItem = document.createElement("div");
     songItem.style.color = "white";
     songItem.style.marginBottom = "1rem";
-    songItem.innerHTML = `
-      <strong>${song.title}</strong> - ${song.duration}<br/>
-      <audio controls src="${song.audioSrc}" style="width: 100%; margin-top: 0.5rem;"></audio>
+    const songText = document.createElement("div");
+    songText.innerHTML = `
+      <strong>${song.title}</strong>
+      <div><small>${song.artist} | ${song.genre}</small></div>
     `;
+
+    const audio = document.createElement("audio");
+    audio.controls = true;
+    audio.src = song.audioSrc;
+    audio.style.width = "100%";
+    audio.style.marginTop = "0.5rem";
+
+
+    audio.addEventListener("play", () => {
+      document.querySelectorAll("audio").forEach((el) => {
+        if (el !== audio) {
+          el.pause();
+        }
+      });
+    });
+
+
+
+songItem.appendChild(audio);
+
     songList.appendChild(songItem);
   });
 
