@@ -21,19 +21,22 @@ export const playlist = (playlistData) => {
     const songItem = document.createElement("div");
     songItem.style.color = "white";
     songItem.style.marginBottom = "1rem";
+
+   
     const songText = document.createElement("div");
     songText.innerHTML = `
       <strong>${song.title}</strong>
       <div><small>${song.artist} | ${song.genre}</small></div>
     `;
 
+    // Create audio element
     const audio = document.createElement("audio");
     audio.controls = true;
     audio.src = song.audioSrc;
     audio.style.width = "100%";
     audio.style.marginTop = "0.5rem";
 
-
+    
     audio.addEventListener("play", () => {
       document.querySelectorAll("audio").forEach((el) => {
         if (el !== audio) {
@@ -42,10 +45,8 @@ export const playlist = (playlistData) => {
       });
     });
 
-
-
-songItem.appendChild(audio);
-
+    songItem.appendChild(songText);
+    songItem.appendChild(audio);
     songList.appendChild(songItem);
   });
 
