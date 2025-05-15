@@ -1,7 +1,7 @@
 import { aside } from "./aside.js";
 import { Header } from "./header.js";
 import { playlist } from "./playlist.js";
-
+import { Footer } from "./footer.js";
 import { playlists } from "./data/db.js";
 
 function main() {
@@ -9,8 +9,8 @@ function main() {
   const headerElement = Header();
   const asideElement = aside();
   const playlistData = playlists[0]; // ✅ pick first playlist, or use .find(...)
-  const mainElement = playlist(playlistData); 
-
+  const mainElement = playlist(playlistData);
+  const footerElement = Footer();
   const bodySection = document.createElement("div");
   bodySection.classList.add("bodySection");
 
@@ -18,6 +18,7 @@ function main() {
   bodySection.appendChild(mainElement);
   app.appendChild(headerElement);
   app.appendChild(bodySection);
+  app.appendChild(footerElement);
 }
 
 window.addEventListener("DOMContentLoaded", main);
